@@ -1,0 +1,47 @@
+body{
+    background-image: url("../images/2.jpg");
+    background-size:100% 100%;
+    background-origin: content-box;
+    height: 100%;
+}
+html{
+    height: 100%;
+}
+@keyframes myfirst {
+    from {background: hotpink;}
+    to{background: red;}
+}
+@keyframes mysecond {
+    0% {opacity:0;}
+    25% {opacity:100;}
+    50% {opacity:0;}
+    100% {opacity:0;}
+}
+@keyframes mythird {
+    0% {opacity:0;}
+    50% {opacity:0;}
+    75% {opacity:100;}
+    100% {opacity:0;}
+
+}
+h1{
+    animation: myfirst 1s infinite;
+}
+p{
+    font-size: 100px;
+    position: absolute;
+    width: 100%;
+    padding-top: 30%;
+    padding-left: 30%;
+
+}
+#lijie{
+    animation: mysecond 5s infinite;
+    animation-timing-function: linear;
+    color: blue;
+}
+#tao{
+    animation: mythird 5s infinite;
+    color: chartreuse;
+}
+
