@@ -1,11 +1,13 @@
 body{
     background-image: url("../images/2.jpg");
     background-size:100% 100%;
-    background-origin: content-box;
-    height: 100%;
+    background-attachment: fixed;
+    height: 200%;
+    width: 150%;
+    margin: 0;
 }
 html{
-    height: 100%;
+    height: 25%;
 }
 @keyframes myfirst {
     from {background: hotpink;}
@@ -30,6 +32,11 @@ html{
     70% {opacity:100;}
     75% {opacity:100;}
     100% {opacity:0;}
+
+}
+span.highlight{
+    font-size: 120%;
+    background-color: darkorange;
 
 }
 h1{
