@@ -24,6 +24,14 @@ html{
     100% {opacity:0;}
 
 }
+@keyframes zc {
+    0% {opacity:0;}
+    50% {opacity:0;}
+    70% {opacity:100;}
+    75% {opacity:100;}
+    100% {opacity:0;}
+
+}
 h1{
     animation: myfirst 1s infinite;
 }
@@ -31,7 +39,7 @@ p{
     font-size: 100px;
     position: absolute;
     width: 100%;
-    padding-top: 30%;
+    padding-top: 10%;
     padding-left: 30%;
 
 }
@@ -44,4 +52,8 @@ p{
     animation: mythird 5s infinite;
     color: chartreuse;
 }
-
+#c{
+    animation: zc 5s infinite;
+    font-size: 200px;
+    display: block;
+}
