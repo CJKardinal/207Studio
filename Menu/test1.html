@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>207</title>
-    <script src="https://cjkardinal.github.io/207Studio/Menu/js/taolu.js"></script>
-    <script src="https://cjkardinal.github.io/207Studio/Menu/js/alert.js"></script>
+    <style>
+        #bgmButton{
+            height:240px ;
+            width: 240px;
+            background-image: url("images/xinxin.gif");
+
+
+        }
+    </style>
+<!--    <script src="https://cjkardinal.github.io/207Studio/Menu/js/taolu.js"></script>-->
+<!--    <script src="https://cjkardinal.github.io/207Studio/Menu/js/alert.js"></script>-->
     <link rel="stylesheet" type="text/css" href="./css/p.css" />
+
 
 
 </head>
@@ -17,7 +27,22 @@
     <q id="c"> 最菜?</q>
 </p>
 <!--<div class="ta"></div>-->
-<audio src="./bgm/bgm0.mp3" controls="controls" autoplay="autoplay">
+<audio id="Dbgm" src="./bgm/bgm0.mp3"  autoplay="autoplay">
 </audio>
+<div id="bgmButton" onclick="control()"></div>
+<div>123131321</div>
 </body>
+<script>
+    function control() {
+        if(document.getElementById("Dbgm").paused()){
+            document.getElementById("Dbgm").play();
+            document.getElementById("bgmButton").style.background=" url('/images/xinxin.gif')";
+        }
+        else{
+            document.getElementById("Dbgm").pause();
+            document.getElementById("bgmButton").style.background=" url('/images/stop1.png')";
+
+        }
+    }
+</script>
 </html>
