@@ -5,11 +5,11 @@
     <title>207</title>
     <style>
         #bgmButton{
-            height:240px ;
-            width: 240px;
-            background-image: url("images/xinxin.gif");
-
-
+            height:214px ;
+            width: 214px;
+            background-image: url("images/DVA.1.gif");
+            position: fixed;
+            z-index:1;
         }
     </style>
 <!--    <script src="https://cjkardinal.github.io/207Studio/Menu/js/taolu.js"></script>-->
@@ -27,20 +27,23 @@
     <q id="c"> 最菜?</q>
 </p>
 <!--<div class="ta"></div>-->
-<audio id="Dbgm" src="./bgm/bgm0.mp3"  autoplay="autoplay">
+<audio id="Dbgm" src="./bgm/bgm0.mp3"  preload="auto" loop="loop" autoplay="autoplay">
 </audio>
 <div id="bgmButton" onclick="control()"></div>
-<div>123131321</div>
 </body>
 <script>
+    // IsPlaying=true;
     function control() {
-        if(document.getElementById("Dbgm").paused()){
+        if(document.getElementById("Dbgm").paused){
             document.getElementById("Dbgm").play();
-            document.getElementById("bgmButton").style.background=" url('/images/xinxin.gif')";
+            document.getElementById("bgmButton").style.background=" url('images/DVA.1.gif')";
+            // IsPlaying=!IsPlaying;
         }
         else{
             document.getElementById("Dbgm").pause();
-            document.getElementById("bgmButton").style.background=" url('/images/stop1.png')";
+            document.getElementById("bgmButton").style.background=" url('images/stop2.png')";
+            // IsPlaying=!IsPlaying;
+
 
         }
     }
